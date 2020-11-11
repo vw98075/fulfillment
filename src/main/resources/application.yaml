@@ -1,0 +1,21 @@
+order:
+  receive:
+    rate_per_second: 2
+  expiration:
+    check:
+      rate: 5000
+
+shelf:
+  number: 1
+  size:
+    regular: 10
+    verflow: 15
+
+logging:
+  level:
+    com.vw.example.kitchen.fulfillment: DEBUG
+    org.springframework: ERROR
+  pattern:
+    console: "%d{HH:mm:ss.SSS} [%t] %L %-5level %logger{36} - %msg%n"
+    file: "%d %p %c{1.} [%t] %m%n"
+  file: orders.log

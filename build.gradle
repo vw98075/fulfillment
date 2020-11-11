@@ -1,0 +1,36 @@
+plugins {
+	id 'org.springframework.boot' version '2.4.0-M4'
+	id 'io.spring.dependency-management' version '1.0.10.RELEASE'
+	id 'java'
+}
+
+group = 'com.vw.example.kitchen'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '15'
+
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
+repositories {
+	mavenCentral()
+	maven { url 'https://repo.spring.io/milestone' }
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter'
+	implementation 'com.fasterxml.jackson.core:jackson-databind:2.11.3'
+    implementation 'junit:junit:4.12'
+	compileOnly 'org.projectlombok:lombok'
+	annotationProcessor 'org.projectlombok:lombok'
+	testImplementation 'org.awaitility:awaitility:4.0.3'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.7.0'
+
+}
+
+test {
+	useJUnitPlatform()
+}
