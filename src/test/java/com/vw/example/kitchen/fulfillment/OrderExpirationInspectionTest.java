@@ -2,7 +2,7 @@ package com.vw.example.kitchen.fulfillment;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.vw.example.kitchen.fulfillment.data.ShelfRack;
+import com.vw.example.kitchen.fulfillment.data.domain.ShelfRack;
 import com.vw.example.kitchen.fulfillment.data.Type;
 import com.vw.example.kitchen.fulfillment.data.domain.FulfilledOrder;
 import com.vw.example.kitchen.fulfillment.data.domain.FulfilledOrderSnapShot;

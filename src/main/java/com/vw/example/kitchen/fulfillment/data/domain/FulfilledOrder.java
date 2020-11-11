@@ -1,5 +1,6 @@
 package com.vw.example.kitchen.fulfillment.data.domain;
 
+import com.vw.example.kitchen.fulfillment.data.Temperature;
 import com.vw.example.kitchen.fulfillment.data.Type;
 import lombok.*;
 

@@ -1,6 +1,6 @@
 package com.vw.example.kitchen.fulfillment;
 
-import com.vw.example.kitchen.fulfillment.data.ShelfRack;
+import com.vw.example.kitchen.fulfillment.data.domain.ShelfRack;
 import com.vw.example.kitchen.fulfillment.data.Type;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
@@ -16,7 +16,7 @@ import java.util.Map;
 
 @SpringBootApplication
 @EnableScheduling
-//@EnableAsync
+@EnableAsync
 @Slf4j
 public class FulfillmentApplication {
 

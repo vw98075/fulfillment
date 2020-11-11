@@ -1,10 +1,8 @@
 package com.vw.example.kitchen.fulfillment.serivce;
 
 import com.vw.example.kitchen.fulfillment.data.*;
-import com.vw.example.kitchen.fulfillment.data.domain.FulfilledOrder;
-import com.vw.example.kitchen.fulfillment.data.domain.FulfilledOrderSnapShot;
-import com.vw.example.kitchen.fulfillment.data.domain.ReceivedOrder;
-import com.vw.example.kitchen.fulfillment.data.domain.Temperature;
+import com.vw.example.kitchen.fulfillment.data.domain.*;
+import com.vw.example.kitchen.fulfillment.data.Temperature;
 import lombok.NonNull;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,7 +1,7 @@
 package com.vw.example.kitchen.fulfillment.serivce;
 
 import com.vw.example.kitchen.fulfillment.data.OrderReadyEvent;
-import com.vw.example.kitchen.fulfillment.data.ShelfRack;
+import com.vw.example.kitchen.fulfillment.data.domain.ShelfRack;
 import com.vw.example.kitchen.fulfillment.data.Type;
 import com.vw.example.kitchen.fulfillment.data.domain.FulfilledOrder;
 import com.vw.example.kitchen.fulfillment.data.domain.FulfilledOrderSnapShot;

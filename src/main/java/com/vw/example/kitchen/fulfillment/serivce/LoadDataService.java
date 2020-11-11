@@ -44,7 +44,7 @@ public class LoadDataService implements CommandLineRunner {
             int mSecond = 1000/ orderReceiveRate;
             for(ReceivedOrder order : orderList){
                 TimeUnit.MILLISECONDS.sleep(mSecond);
-                publisher.publishEvent(new NewOrderEvent(this, order));
+                publisher.publishEvent(new NewOrderEvent(order));
             }
         } catch (Exception ex) {
             log.error(Arrays.toString(ex.getStackTrace()));

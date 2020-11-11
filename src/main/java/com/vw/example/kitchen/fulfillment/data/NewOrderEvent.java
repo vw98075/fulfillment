@@ -5,17 +5,15 @@ import lombok.Getter;
 import org.springframework.context.ApplicationEvent;
 
 @Getter
-public final class NewOrderEvent extends ApplicationEvent {
+public final class NewOrderEvent {
 
     private final ReceivedOrder order;
 
     /**
      *
-     * @param source
      * @param o
      */
-    public NewOrderEvent(Object source, ReceivedOrder o){
-        super(source);
+    public NewOrderEvent(ReceivedOrder o){
         this.order = o;
     }
 }

@@ -5,7 +5,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.vw.example.kitchen.fulfillment.data.Type;
 import com.vw.example.kitchen.fulfillment.data.domain.FulfilledOrder;
 import com.vw.example.kitchen.fulfillment.data.domain.ReceivedOrder;
-import com.vw.example.kitchen.fulfillment.data.ShelfRack;
+import com.vw.example.kitchen.fulfillment.data.domain.ShelfRack;
 import com.vw.example.kitchen.fulfillment.serivce.NewOrderHandler;
 import com.vw.example.kitchen.fulfillment.serivce.OrderReadyHandler;
 import org.springframework.boot.test.context.SpringBootTest;

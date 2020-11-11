@@ -1,8 +1,7 @@
-package com.vw.example.kitchen.fulfillment.data;
+package com.vw.example.kitchen.fulfillment.data.domain;
 
-import com.vw.example.kitchen.fulfillment.data.domain.FulfilledOrder;
-import com.vw.example.kitchen.fulfillment.data.domain.FulfilledOrderSnapShot;
-import com.vw.example.kitchen.fulfillment.data.domain.Temperature;
+import com.vw.example.kitchen.fulfillment.data.Temperature;
+import com.vw.example.kitchen.fulfillment.data.Type;
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 
