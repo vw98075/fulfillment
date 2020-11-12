@@ -45,7 +45,7 @@ public class OrderReadyHandler {
         removeOrderForDelivery(order);
     }
 
-    public void removeOrderForDelivery(FulfilledOrder order) {
+    public void removeOrderForDelivery(final FulfilledOrder order) {
         ShelfRack rack ;
         boolean isSuccessful;
         switch(order.getTemp()){
@@ -75,14 +75,15 @@ public class OrderReadyHandler {
             log.debug("Order removed, " + order.toString());
         }
 
-            Set<Type> types = shelfMap.keySet();
-            for (Type t : types) {
-                ShelfRack shelfRack = shelfMap.get(t);
-                Set<FulfilledOrderSnapShot> orders = shelfRack.getSnapShotOfFulfilledOrders();
-                log.debug("................... Shelf - " + t.toString() + " (" + orders.size() + ") ...................");
-                for (FulfilledOrderSnapShot anOrder : orders) {
-                    log.debug(order.toString());
-                }
-            }
+        printData();
+    }
+
+    private void printData(){
+
+        Set<Type> types = shelfMap.keySet();
+        for (Type t : types) {
+            ShelfRack shelfRack = shelfMap.get(t);
+            shelfRack.printShapshuts();
+        }
     }
 }

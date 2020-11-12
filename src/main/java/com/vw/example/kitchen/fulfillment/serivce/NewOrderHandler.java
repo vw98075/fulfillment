@@ -121,14 +121,17 @@ public class NewOrderHandler {
             log.debug("An order, " + newOrder.toString() + ", to its temperature shelf");
         }
 
+      printData();
+    }
+
+    private void printData(){
+
         Set<Type> types = shelfMap.keySet();
-        for(Type t : types){
-            Set<FulfilledOrderSnapShot> orders =  shelfMap.get(t).getSnapShotOfFulfilledOrders();
-            log.debug("................... Shelf - " + t.toString() + " (" + orders.size() + ") ...................");
-            for(FulfilledOrderSnapShot order : orders){
-                log.debug(order.toString());
-            }
+        for (Type t : types) {
+            ShelfRack shelfRack = shelfMap.get(t);
+            shelfRack.printShapshuts();
         }
+
     }
 
     private Set<Temperature> findOrderTemperaturesWithRoomOtherThanTemperature(Type shelfType) {

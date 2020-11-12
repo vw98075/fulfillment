@@ -165,4 +165,12 @@ public class ShelfRack {
 
         return shelves.stream().map(shelf -> shelf.getNumberOfOrders()).reduce(0, Integer::sum);
     }
+
+    public void printShapshuts(){
+        Set<FulfilledOrderSnapShot> orders = getSnapShotOfFulfilledOrders();
+        log.debug("................... Shelf - " + type.toString() + " (" + orders.size() + ") ...................");
+        for (FulfilledOrderSnapShot order : orders) {
+            log.debug(order.toString());
+        }
+    }
 }
